@@ -1,0 +1,8 @@
+app:
+  build: "."
+  ports:
+    - "8080:80"
+  volumes:
+    - "./saveData:/usr/local/apache2/saveData"
+    - "./logs:/usr/local/apache2/htdocs/DodontoF/log.*:ro"
+    - "./httpd.conf:/usr/local/apache2/conf/httpd.conf"
